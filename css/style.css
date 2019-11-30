@@ -494,7 +494,8 @@ html {
   padding: 5rem 10vw;
   grid-row-gap: 5rem;
   opacity: 0;
-  font-family: 'Alata', sans-serif; }
+  font-family: 'Alata', sans-serif;
+  transition: opacity 1.5s; }
   .work__title {
     align-self: center;
     justify-self: center;
