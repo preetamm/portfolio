@@ -2,15 +2,15 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver  watch-sass",
-    "compile-sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix-css": "postcss --use autoprefixer  -o css/style.prefix.css  css/style.comp.css",
-    "compress-css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "watch-sass": "node-sass sass/main.scss public/css/style.css -w",
+    "devserver": "nodemon app.js",
+    "start": "npm-run-all --parallel devserver watch-sass",
+    "compile-sass": "node-sass sass/main.scss public/css/style.comp.css",
+    "prefix-css": "postcss --use autoprefixer  -o public/css/style.prefix.css  public/css/style.comp.css",
+    "compress-css": "node-sass piblic/css/style.prefix.css public/css/style.css --output-style compressed",
     "build-css": "npm-run-all compile-sass prefix-css compress-css",
     "start-parcel": "parcel build index.html"
   },
@@ -26,6 +26,9 @@
     "postcss-cli": "^6.1.3"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.1",
     "randomcolor": "^0.5.4"
   }
 }
