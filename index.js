@@ -114,7 +114,7 @@ function animateMe() {
 }
 
 var option = {
-    threshold: 1.0
+    threshold: 0.5
 }
 
 
@@ -189,7 +189,9 @@ let observerForSkill = new IntersectionObserver((entries) => {
         }, 500)
        // console.log('done animating')
     }
-}, {threshold : 0.7})
+}, {threshold : 0.8})
+
+
 observerForSkill.observe(document.querySelector('.skills'))
 
 observer.observe(document.querySelector('.skill-section'));
