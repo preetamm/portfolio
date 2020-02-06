@@ -19,7 +19,9 @@ html {
 .header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: black;
+  background-image: url("../img/header-background-img.jpg");
+  background-size: cover;
+  opacity: 0.8;
   grid-row: 1;
   font-family: 'Alata', sans-serif; }
   @media only screen and (max-width: 632px) {
@@ -38,7 +40,8 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Alata', sans-serif;
-    font-weight: 100; }
+    font-weight: 100;
+    opacity: 1; }
   .header__wrap {
     display: flex;
     flex-direction: column;
@@ -50,11 +53,13 @@ html {
     @media only screen and (max-width: 632px) {
       .header__wrap {
         text-align: center;
-        animation-name: moveUp; } }
+        animation-name: moveUp;
+        opacity: 1; } }
 
 .first {
   font-size: 6rem;
-  color: #FF0000; }
+  color: #517fdb;
+  opacity: 1; }
   @media only screen and (max-width: 1440px) {
     .first {
       font-size: 3rem; } }
@@ -67,7 +72,8 @@ html {
 
 .second {
   font-size: 9rem;
-  font-family: 'Alata', sans-serif; }
+  font-family: 'Alata', sans-serif;
+  opacity: 1; }
   @media only screen and (max-width: 1440px) {
     .second {
       font-size: 3rem; } }
@@ -82,7 +88,8 @@ html {
   display: flex;
   justify-content: space-between;
   align-content: space-between;
-  margin-top: .5rem; }
+  margin-top: .5rem;
+  opacity: 1; }
   .third--1 {
     background-color: white;
     color: black;
@@ -100,7 +107,8 @@ html {
         height: 3.2rem; } }
     .third--1 h3 {
       color: black;
-      font-size: 6rem; }
+      font-size: 6rem;
+      opacity: 1; }
       @media only screen and (max-width: 1440px) {
         .third--1 h3 {
           font-size: 3rem; } }
@@ -113,8 +121,9 @@ html {
   .third--2 {
     font-size: 6rem;
     margin-left: .5rem;
-    color: #FF0000;
-    padding: 0px 0px; }
+    color: #517fdb;
+    padding: 0px 0px;
+    opacity: 1; }
     @media only screen and (max-width: 1440px) {
       .third--2 {
         font-size: 3rem; } }
@@ -198,8 +207,8 @@ html {
     position: absolute;
     content: ' ';
     width: 100%;
-    background-color: #FF0000;
-    border: 1.5px solid #FF0000;
+    background-color: #517fdb;
+    border: 1.5px solid #517fdb;
     right: 1px;
     border-radius: 50px;
     top: 8rem; }
@@ -255,8 +264,8 @@ html {
     position: absolute;
     content: ' ';
     width: 100%;
-    background-color: #FF0000;
-    border: 1.5px solid #FF0000;
+    background-color: #517fdb;
+    border: 1.5px solid #517fdb;
     right: 1px;
     border-radius: 50px;
     top: 8rem;
@@ -311,7 +320,7 @@ html {
   .skill__percentage {
     justify-self: end;
     font-size: 2.5rem;
-    color: #FF0000; }
+    color: #517fdb; }
     @media only screen and (max-width: 1440px) {
       .skill__percentage {
         font-size: 1.5rem; } }
@@ -320,7 +329,7 @@ html {
         font-size: 1.2rem; } }
   .skill__percentage-bar {
     grid-column: 1 / span 2;
-    background-color: #888182;
+    background-color: #FCF9F9;
     justify-self: stretch;
     width: 100%;
     height: 8px;
@@ -331,7 +340,7 @@ html {
   .skill__percentage-indicater {
     position: absolute;
     height: 100%;
-    background-color: #FF0000;
+    background-color: #517fdb;
     transition: all 1.5s; }
     @media only screen and (max-width: 768px) {
       .skill__percentage-indicater {
@@ -384,7 +393,7 @@ html {
   grid-template-columns: repeat(2, 1fr);
   align-content: center;
   justify-content: center;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.8)), url(../img/pattern_1.jpg);
+  background-image: linear-gradient(to right, rgba(81, 127, 219, 0.8), rgba(81, 127, 219, 0.8)), url(../img/pattern_1.jpg);
   background-size: cover;
   color: white;
   padding: 6rem;
@@ -515,8 +524,8 @@ html {
     position: absolute;
     content: ' ';
     width: 100%;
-    background-color: #FF0000;
-    border: 1.5px solid #FF0000;
+    background-color: #517fdb;
+    border: 1.5px solid #517fdb;
     right: 1px;
     border-radius: 50px;
     top: 8rem; }
@@ -571,7 +580,7 @@ html {
     transform: translateY(0%); } }
 
 .footer {
-  background-color: rgba(255, 0, 0, 0.8);
+  background-color: rgba(81, 127, 219, 0.8);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 10vh);
