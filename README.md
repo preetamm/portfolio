@@ -1,3 +1,3 @@
 # portfolio
 
-This is my portfolio website and showscase my previous works 
+This is my portfolio website but this just shows my css skills
